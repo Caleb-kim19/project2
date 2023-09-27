@@ -10,28 +10,75 @@ body {
     margin: 20px;
     line-height: 26px;
 }
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
 h1, h2, h3 {
     color: #4CAF50;
 }
+
+#menulist {
+    padding: 0;
+    position: relative;
+    overflow: auto;
+}
+
+.menuitem {
+    width: 165px;
+    float: left;
+    background-color: #555555;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sidebar {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding-left: 10px;
+}
+
+#bottom{
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
 a {
     color: #000000;
 }
+
 </style>
+
 </head>
 <body>
-    <div>
+
+    <div class="container wrapper">
         <div id="top">
-            <h1>Welcome to 김시찬’s Homepage 21900312</h1>
+            <h1>Welcome to 김시찬’s Homepage 21900132</h1>
             <p>Use the menu to select different Stylesheets</p>
         </div>
-        <div id="menubar">
-            <ul id="menulist">
-                <li>Stylesheet 1</li>
-                <li>Stylesheet 2</li>
-                <li>Stylesheet 3</li>
-                <li>Stylesheet 4</li>
-                <li>No Stylesheet</li>
-            </ul>
+        <div class="wrapper">
+            <div id="menubar">
+                <ul id="menulist">
+                    <a href="style1.html"><li class="menuitem">Stylesheet 1</li></a>
+                    <a href="style2.html"><li class="menuitem">Stylesheet 2</li></a>
+                    <a href="#"><li class="menuitem">Stylesheet 3</li></a>
+                    <a href="#"><li class="menuitem">Stylesheet 4</li></a>
+                    <a href="nostyle.html"><li class="menuitem">No Stylesheet</li></a>
+                </ul>
+            </div>
             <div>
                 <div id="main">
                     <h1>Same Page Different Stylesheets</h1>
