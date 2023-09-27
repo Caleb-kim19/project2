@@ -42,6 +42,14 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
+#menulist > .menuitem:nth-child(1) {
+   background-color:#04AA6D;
+}
+
+#menulist > .menuitem:hover {
+    background-color: #000;
+}
+
 #sidebar {
     background-color: #f1f1f1;
     border: 1px solid #d4d4d4;
@@ -55,8 +63,17 @@ h1, h2, h3 {
     line-height: 14px;
 }
 
+#a_link{
+    text-decoration-line:none;
+    color: #ffffff;
+}
+
 a {
     color: #000000;
+}
+
+a:hover {
+    color: #84c754;
 }
 
 </style>
@@ -72,11 +89,11 @@ a {
         <div class="wrapper">
             <div id="menubar">
                 <ul id="menulist">
-                    <a href="style1.html"><li class="menuitem">Stylesheet 1</li></a>
-                    <a href="style2.html"><li class="menuitem">Stylesheet 2</li></a>
-                    <a href="style2.html"><li class="menuitem">Stylesheet 3</li></a>
-                    <a href="style2.html"><li class="menuitem">Stylesheet 4</li></a>
-                    <a href="nostyle.html"><li class="menuitem">No Stylesheet</li></a>
+                    <li class="menuitem"><a id="a_link" href="style1.html"></a>Stylesheet 1</li>
+                    <li class="menuitem"><a id="a_link" href="style2.html">Stylesheet 2</li></a>
+                    <li class="menuitem">Stylesheet 3</li>
+                    <li class="menuitem">Stylesheet 4</li>
+                    <li class="menuitem"><a href="nostyle.html"></a>No Stylesheet</li>
                 </ul>
             </div>
             <div>
